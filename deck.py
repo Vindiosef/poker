@@ -1,7 +1,7 @@
 from card import Card
 import random
 
-class deck:
+class Deck:
 
     def __init__(self, deck_ids):
         #this allows for deck variations
