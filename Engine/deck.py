@@ -1,9 +1,9 @@
-from card import Card
+from Engine.card import Card
 import random
 
 class Deck:
 
-    def __init__(self, deck_ids):
+    def __init__(self, deck_ids = None):
         #this allows for deck variations
         self.deck = [Card.from_id(cid) for cid in deck_ids] if deck_ids else self._setup_52_cards()
 

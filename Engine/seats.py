@@ -1,4 +1,4 @@
-from player import Player
+from Engine.player import Player
 
 class Seats:
 

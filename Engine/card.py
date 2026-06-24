@@ -35,6 +35,9 @@ class Card:
     def __eq__(self, value):
         return self.suit == value.suit and self.rank == value.rank
     
+    def __repr__(self):
+        return self.__str__()
+    
     def __str__(self):
         suit = self.SUIT_MAP[self.suit]
         rank = self.RANK_MAP[self.rank]
