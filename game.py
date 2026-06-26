@@ -11,3 +11,5 @@ game.start_new_round(table)
 
 for player in table.seats.players:
     print(player.hole_card)
+
+game.flop(table)
