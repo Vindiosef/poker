@@ -13,3 +13,5 @@ for player in table.seats.players:
     print(player.hole_card)
 
 game.flop(table)
+game.turn(table)
+game.river(table)

@@ -11,12 +11,21 @@ class RoundManager:
         self._deal_holecard(table.deck, table.seats.players)
 
     def flop(self,table):
-        table._community_card.append(table.deck.draw_cards(3))
+        table.deck.draw_card()
+        for card in table.deck.draw_cards(3):
+            table.add_community_card(card)
         print(table._community_card)
 
     def turn(self,table):
         table.deck.draw_card()
-        table._community_card.append(table.deck.draw_cards(1))
+        for card in table.deck.draw_cards(1):
+            table.add_community_card(card)       
+        print(table._community_card)
+    
+    def river(self,table):
+        table.deck.draw_card()
+        for card in table.deck.draw_cards(1):
+            table.add_community_card(card)
         print(table._community_card)
 
     @classmethod
